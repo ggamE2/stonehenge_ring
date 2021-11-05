@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+
+section{width:100%;overflow: hidden;position:relative;background-size:cover;background-position:center;background-attachment: fixed;}
+
+.page1{background: #ffeeca;}
+.page2{background-image:url(../images/back_ring2.png);background-color: #ffeeca;}
+.page3{background-image:url(../images/honey_back02.png);background-color: #ffeeca;}
+.page4{background-image:url(../images/she_back3.png);background-color: #ffeeca;}
+.page5{background-image: url(../images/luckY_back3.png);background-color: #ffeeca;}
+.page6{background-image:url(../images/back_06.png);background-color: #ffeeca;}
+
+/*오른쪽 점메뉴*/
+.menu_r{position:fixed;top:50%;right:15px;transform: translateY(-50%);z-index: 50;}
+.gnb_r li{height:3px;margin-bottom:20px;}
+.gnb_r li:last-child{height:3px;margin-bottom:0px;}
+.gnb_r a{float:right;display: block;width:20px;height:3px;background:#fff;transition:all 0.5s;}
+.gnb_r li a{}
+
+.gnb_r li a:hover{width:40px;height:3px;}
+.gnb_r li.on a{width:40px;height:3px;}
+
+
+.scroll_btn{position:absolute;left:50%;bottom:30px;transform: translateX(-50%);animation-name: down;animation-duration: 1.5s;animation-iteration-count: infinite;}
+
+@keyframes down{
+    0%{transform: translateY(0);}    
+    50%{transform: translateY(25px);}    
+    100%{transform: translateY(0);}    
+}
+
+
+/*page1*/
+#page1{width:1600px;height:900px;position: absolute; margin: 0 auto;}
+#page1 h2{position: absolute; top:15%; left:5%; transition(-50%,-50%); font:normal 90px "Bebas Neue"; letter-spacing:5px; z-index: 3; text-align:left; line-height:0.9;}
+#page1 h3{top:640px; position: absolute; left:970px; transition(-50%,-50%); font:bold 24px "Bebas Neue";letter-spacing: 5px; z-index: 3;}
+#page1 h2 span{color:#fff;}
+#page1 .c2{position: absolute; top:24%; left:43%; width: 400px; height: 420px; border-radius:420px; background:rgba(255,255,255,0.6);z-index:0;}
+#page1 .c1{position: absolute; top:19%; left:25%; }
+#page1 .c1 video{width:490px; height: 490px; border-radius:500px; z-index:5;}
+
+
+/*page2*/
+#page2{width:1600px;height:900px;position: absolute; margin: 0 auto; } 
+#page2 h2{position: absolute; top:15%; right: 10%; transition(-50%,-50%); font:normal 70px "Bebas Neue"; line-height: 0.9; letter-spacing:5px; z-index: 3;}
+#page2 span{font:normal 55px "Bebas Neue"; position:absolute; top:110px; left:20px; color:#fef8e0;}
+#page2 .c2 ul{position:absolute; top:11%; left:6%; transition:(-50%,-50%); width: 570px;}
+#page2 .c2 li{position:relative; float:left; margin-right:15px; margin-bottom:15px; z-index: 2; background: #000;}
+#page2 .c2 li:first-child{margin-left:195px;}
+#page2 .c2 li:nth-child(2){margin-left:97.5px;}
+#page2 .c2 li:nth-child(3){margin-right:97.5px;}
+#page2 .c2 li:last-child{margin-right:0px;}
+#page2 li img{width: 180px;}
+#page2 li img:hover{background:#000; opacity:0.8;}
+
+#page2 ul li .cap{position: absolute;top: 0;left: 0;
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(153,22,212,0.25));
+    width: 180px;height: 180px;
+    transition: all 0.5s;
+    opacity: 0;}
+#page2 ul li .cap .h{width: 60px;height: 1px;
+    background: rgba(255,255,255,1);
+    position: absolute;top: 50%;left: -50%;margin-left: -30px;transition: all 0.5s;}
+#page2 ul li .cap .v{width: 1px;height: 60px;background: rgba(255,255,255,1);
+    position: absolute;top: -50%;left: 50%;margin-top: -30px;
+    transition: all 0.5s;}
+#page2 ul li strong{font-size: 15px;}
+#page2 ul li:hover .cap{opacity: 1;}
+#page2 ul li:hover .cap .h{top:50%; left:50%;}
+#page2 ul li:hover .cap .v{top:50%; left:50%;}
+
+
+
+/*page3*/
+#page3{width: 1500px;height:1000px;position: absolute; margin: 0 auto; } 
+#page3 h2{font:normal 70px "Bebas Neue"; line-height: 0.9;position:absolute; top:15%; right:10%;line-height:0.9; z-index: 2;}
+#page3 span{font:normal 55px "Bebas Neue"; position:absolute; top:110px; left:20px; color:#fef8e0;}
+#page3 .layer{position:absolute; top:10%; right:100px; width: 600px; height: 600px;}
+#page3 .c2 ul{position:absolute; top:10%; left:8%; transition:(-50%,-50%); width: 630px;}
+#page3 .c2 li{position:relative; float:left; margin-right:15px; margin-bottom:15px; z-index: 2; background: #000;}
+#page3 .c2 li img{width: 200px; }
+#page3 .c2 li img:hover{background:#000; opacity:0.8;}px; height: 600px;}
+#page3 .c2 ul{position:absolute; top:10%; left:5%; transition:(-50%,-50%); width: 630px;}
+#page3 .c2 li{position:relative; float:left; margin-right:15px; margin-bottom:15px; z-index: 2; background: #000;}
+#page3 .c2 li:nth-child(3){margin-right:0px;}
+#page3 .c2 li:nth-child(4){margin-left:92.5px; margin-right: 15px;}
+#page3 .c2 li:nth-child(5){margin-right: 92.5px;}
+#page3 .c2 li img{width: 180px; }
+#page3 .c2 li img:hover{background:#000; opacity:0.8;}
+
+#page3 ul li .cap{position: absolute;top: 0;left: 0;
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(153,22,212,0.25));
+    width: 180px;height: 180px;
+    transition: all 0.5s;
+    opacity: 0;}
+#page3 ul li .cap .h{width: 60px;height: 1px;
+    background: rgba(255,255,255,1);
+    position: absolute;top: 50%;left: -50%;margin-left: -30px;transition: all 0.5s;}
+#page3 ul li .cap .v{width: 1px;height: 60px;background: rgba(255,255,255,1);
+    position: absolute;top: -50%;left: 50%;margin-top: -30px;
+    transition: all 0.5s;}
+#page3 ul li strong{font-size: 15px;}
+#page3 ul li:hover .cap{opacity: 1;}
+#page3 ul li:hover .cap .h{top:50%; left:50%;}
+#page3 ul li:hover .cap .v{top:50%; left:50%;}
+
+/*page4*/
+#page4{width: 1500px;height:1000px;position: absolute; margin: 0 auto; } 
+#page4 h2{font:normal 70px "Bebas Neue"; line-height: 0.9; position:absolute; top:15%; right:10%;z-index: 2;}
+#page4 span{font:normal 55px "Bebas Neue"; position:absolute; top:110px; left:20px; color:#fef8e0;}
+#page4 .layer{position:absolute; top:10%; right:100px; width: 600px; height:600px;}
+#page4 .c2 ul{position:absolute; top:11%; left:6%; transition:(-50%,-50%); width: 570px;}
+#page4 .c2 li{position:relative; float:left; margin-right:15px; margin-bottom:15px; z-index: 2; background: #000;}
+
+
+#page4 .c2 li:first-child{margin-right:195px;}
+#page4 .c2 li:nth-child(3){margin-left:97.5px;}
+#page4 .c2 li:nth-child(4){margin-right:97.5px;}
+#page4 .c2 li:last-child{margin-left:195px;}
+#page4 li img{width: 180px;}
+#page4 li img:hover{background:#000; opacity:0.8;}
+
+#page4 ul li .cap{position: absolute;top: 0;left: 0;
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(153,22,212,0.25));
+    width: 180px;height: 180px;
+    transition: all 0.5s;
+    opacity: 0;}
+#page4 ul li .cap .h{width: 60px;height: 1px;
+    background: rgba(255,255,255,1);
+    position: absolute;top: 50%;left: -50%;margin-left: -30px;transition: all 0.5s;}
+#page4 ul li .cap .v{width: 1px;height: 60px;background: rgba(255,255,255,1);
+    position: absolute;top: -50%;left: 50%;margin-top: -30px;
+    transition: all 0.5s;}
+#page4 ul li strong{font-size: 15px;}
+#page4 ul li:hover .cap{opacity: 1;}
+#page4 ul li:hover .cap .h{top:50%; left:50%;}
+#page4 ul li:hover .cap .v{top:50%; left:50%;}
+
+/*page5*/
+#page5{width: 1500px;height:1000px;position: absolute; margin: 0 auto; } 
+#page5 h2{font:normal 70px "Bebas Neue";line-height: 0.9;position:absolute; top:15%; right:10%;line-height:0.9; z-index: 2;}
+#page5 span{font:normal 55px "Bebas Neue"; position:absolute; top:110px; left:20px; color:#fef8e0;}
+#page5 .layer{position:absolute; top:10%; right:140px; width: 570px; height: 570px;}
+#page5 .c2 li img:hover{background:#000; opacity:0.8; height: 600px;}
+#page5 .c2 ul{position:absolute; top:30%; left:5%; transition:(-50%,-50%); width: 630px;}
+#page5 .c2 li{position:relative; float:left; margin-right:15px; margin-bottom:15px; z-index: 2; background: #000;}
+#page5 .c2 li:nth-child(3){margin-right:0px;}
+#page5 .c2 li:nth-child(4){margin-left:205px; margin-right: 205px;}
+#page5 .c2 li:nth-child(7){margin-right: 0;}
+#page5 .c2 li img{width: 190px; }
+#page5 .c2 li img:hover{background:#000; opacity:0.8;}
+
+#page5 ul li .cap{position: absolute;top: 0;left: 0;
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(153,22,212,0.25));
+    width: 190px;height: 190px;
+    transition: all 0.5s;
+    opacity: 0;}
+#page5 ul li .cap .h{width: 60px;height: 1px;
+    background: rgba(255,255,255,1);
+    position: absolute;top: 50%;left: -50%;margin-left: -30px;transition: all 0.5s;}
+#page5 ul li .cap .v{width: 1px;height: 60px;background: rgba(255,255,255,1);
+    position: absolute;top: -50%;left: 50%;margin-top: -30px;
+    transition: all 0.5s;}
+#page5 ul li strong{font-size: 15px;}
+#page5 ul li:hover .cap{opacity: 1;}
+#page5 ul li:hover .cap .h{top:50%; left:50%;}
+#page5 ul li:hover .cap .v{top:50%; left:50%;}
+
+/*page6*/
+#page6{width:1500px;height:1000px; position: absolute;} 
+#page6 h2{font-size:40px; position:absolute; top:10%; z-index:3; left:30%; font-family: 100;}
+#page6 ul{position: absolute; top:20%; left:15%;}
+#page6 .sns li{float:left; margin-right:20px;}
+#page6 .sns li:hover{transform: translateY(-20px); transition: all 0.5s; opacity: 0.8;}
+#page6 .sns img{width: 200px;}
+#page6 .icon{position: relative; top:450px; left:630px;}
+#page6 .icon li{float:left; margin-right: 10px;}
+#page6 .icon li:hover{opacity:0.8;}
+
+#page6 .foot{position:relative; background:#57d9db;}
+#page6 .foot{position: relative; top:590px; left:100px;}
+#page6 .foot>div{float:left; margin-right:400px;}
+#page6 .foot>div:nth-child(2){float:left; margin-right:0px; }
+#page6 .foot p{font:bold 24px "Malgun Gothic"; color:#fff;}
+#page6 .foot a{font:bold 16px "Malgun Gothic"; color:#fff;}
+
+#page6 .foot1 a:hover{color:#000;}
+#page6 .foot2 a:hover{color:#000;}
+
+#page6 .foot3{text-align: center;}
+#page6 .foot3 a{font:bold 16px "Malgun Gothic"; color:#fff;}
+
+#page6 .line{ position: relative; margin-top:40px; width: 1400px; height: 2px; background:#fff;}
+#page6 .foot3{text-align: center; margin-top: 50px;}
+#page6 .foot3 p{font:bold 16px "Malgun Gothic"; color:#fff;}
+
+
+
+#footer{width:1500px;height:100px; position: absolute; background:#57d9db; } 
+#footer>div a :hover{color:#000;}
+#footer .foot3{width:1500px;height:70px; position: absolute;  margin: 0 auto; text-align: center; font:bold 13px "Malgun Gothic"; color:#fff; margin-top: 10px;}
+#footer .foot3 h2{font:bold 13px "Malgun Gothic"; color:#fff; margin-top: 20px; text-align: center; }
+
+
+
+
+
+
+
+
+
+
+
+
+
